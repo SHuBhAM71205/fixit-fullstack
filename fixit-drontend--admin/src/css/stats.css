@@ -1,0 +1,18 @@
+.stat-card { background-color: rgba(110, 49, 160, 0.1); padding: 20px; border-radius: 10px; text-align: center; }
+        .available { color: green; font-weight: bold; }
+        .not-available { color: red; font-weight: bold; }
+        .stats-cont{
+            width: 99%;            
+            font-family: sans-serif;
+            font-style: bold;
+            border-radius: 5px; 
+            border: 2px solid blueviolet;
+            background-color:rgba(47, 79, 79, 0.37);
+            justify-content: space-between;
+            align-items: center;
+            }
+        .stat-card{
+            background-color:rgba(47, 79, 79, 0.37);
+            margin: 10px;
+        }
+        

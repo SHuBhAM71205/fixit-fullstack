@@ -1,0 +1,86 @@
+.request-track {
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
+  max-width: 70vw;
+  margin: 0 auto;
+}
+
+.no-request {
+  font-weight: bold;
+  color: #555;
+  text-align: center;
+  padding: 60px 20px;
+  background-color: rgba(47, 79, 79, 0.15);
+  border-radius: 10px;
+  user-select: none;
+}
+
+.track-request {
+  border: 2px solid #6a0dad; /* purple */
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 20px;
+  background-color: rgba(110, 49, 160, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  box-shadow: 0 2px 8px rgba(106, 13, 173, 0.15);
+  transition: box-shadow 0.3s ease;
+}
+
+.track-request:hover {
+  box-shadow: 0 4px 15px rgba(106, 13, 173, 0.3);
+}
+
+.request-title {
+  margin: 0;
+  font-size: 1.3rem;
+  color: #0f1035;
+  font-weight: 700;
+}
+
+.description {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.5;
+  max-height: 5rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.progress-bar-container {
+  border: none;
+  padding: 0;
+  margin-top: 15px;
+}
+
+.progress-bar-container legend {
+  font-weight: 600;
+  color: #0f1035;
+  margin-bottom: 8px;
+  font-size: 1.1rem;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 14px;
+  background-color: #ddd;
+  border-radius: 8px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: inset 0 1px 3px rgba(0,0,0,0.1);
+}
+
+/* Progress fill */
+.progress-bar::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  height: 100%;
+  width: 50%; /* Adjust this width dynamically for progress */
+  background-color: #6a0dad;
+  border-radius: 8px 0 0 8px;
+  transition: width 0.4s ease-in-out;
+}

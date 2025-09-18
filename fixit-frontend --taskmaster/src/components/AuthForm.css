@@ -1,0 +1,108 @@
+
+*{
+  margin: 0;
+  padding: 0;
+
+}
+.container-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width:100vw;
+  min-height:100vh;
+  background-color: #ccc;
+}
+
+.toggle-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.toggle-buttons button {
+  flex: 1;
+  padding: 12px;
+  border-bottom: none;
+  font-weight: 700;
+  font-size: 1.3rem;
+  cursor: pointer;
+  background: #f0f0f0;
+  transition: background 0.3s ease;
+  border-radius: 3px;
+}
+
+.toggle-buttons button.active {
+  background: #007bff;
+  color: white;
+}
+
+.form-box {
+  display: flex;
+  width: 40vw;
+  min-height: 70vh;
+  flex-direction: column;
+  background-color: aliceblue;
+  border:2px solid #007bff;
+  border-radius: 10px;
+}
+
+.form-box input[type="text"],
+.form-box input[type="email"],
+.form-box input[type="password"] {
+  margin: auto;
+  width:90%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.form-box button[type="submit"] {
+  padding: 12px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.form-box button[type="submit"]:hover {
+  background: #0056b3;
+}
+
+.form-box .forgot {
+  font-size: 0.9rem;
+  color: #007bff;
+  text-align: right;
+  margin-bottom: 12px;
+  text-decoration: none;
+}
+
+.form-box .forgot:hover {
+  text-decoration: underline;
+}
+
+.checkbox {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  margin: 20px;
+}
+
+.checkbox input {
+  width: 20px;
+
+}
+
+
+::-webkit-scrollbar{
+    display: none;
+    position: absolute;
+    right:0;
+    top:0px;
+}

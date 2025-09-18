@@ -1,0 +1,108 @@
+.user-track {
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
+  max-width: 90vw;
+  margin: 0 auto;
+}
+
+.user-track h2 { 
+  font-size: 1.8rem;
+  color: #0f1035;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+
+
+.user-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 24px;
+  justify-content: center;
+}
+
+.user-controls input,
+.user-controls select {
+  padding: 10px 12px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  width: 200px;
+  background-color: #fff;
+  transition: border 0.2s;
+}
+
+.user-controls input:focus,
+.user-controls select:focus {
+  outline: none;
+  border: 1px solid #6a0dad;
+}
+
+.user-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.no-user {
+  font-weight: bold;
+  color: #555;
+  text-align: center;
+  padding: 60px 20px;
+  background-color: rgba(47, 79, 79, 0.15);
+  border-radius: 10px;
+  user-select: none;
+}
+
+
+
+.user-card {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 16px;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 12px rgba(106, 13, 173, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.user-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(106, 13, 173, 0.15);
+}
+
+.user-image {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #6a0dad;
+  flex-shrink: 0;
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  flex-grow: 1;
+}
+
+.user-name {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #0f1035;
+  margin: 0;
+}
+
+.user-role,
+.user-place,
+.user-email,
+.user-status {
+  font-size: 1rem;
+  color: #444;
+  margin: 0;
+  line-height: 1.4;
+}

@@ -1,0 +1,128 @@
+.no-task {
+  font-weight: bold;
+  color: #555;
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #DBE0E0;
+  border-radius: 10px;
+  user-select: none;
+}
+/* Task Suggestion Card */
+.task-suggestion {
+  border: 2px solid #6a0dad;
+  border-radius: 10px;
+  padding: 16px 20px;
+  margin-top: 20px;
+  background-color: rgba(110, 49, 160, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  box-shadow: 0 2px 8px rgba(106, 13, 173, 0.15);
+  transition: box-shadow 0.3s ease, height 0.3s ease;
+  overflow: hidden;
+  font-size: 1rem;
+}
+
+.task-suggestion:hover {
+  box-shadow: 0 4px 15px rgba(106, 13, 173, 0.3);
+  height: fit-content;
+}
+
+/* Task Header Info */
+#owner-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.task-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  gap: 10px;
+}
+
+/* Owner Details */
+.owner {
+  text-align: start;
+  color: #0f1035;
+  font-weight: 600;
+}
+
+/* Problem Description */
+#Problem-Discription {
+  margin: 10px 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+/* Task Title */
+.title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #0f1035;
+}
+
+/* Avatar Image */
+.task-image img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #6a0dad;
+}
+
+/* Toggle Switch */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 25px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0; left: 0;
+  right: 0; bottom: 0;
+  background-color: #ff4d4d;
+  transition: 0.4s;
+  border-radius: 25px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 4px;
+  bottom: 3.5px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #28a745;
+}
+
+input:checked + .slider:before {
+  transform: translateX(24px);
+}
+
+/* Output Element (if any) */
+output {
+  margin: 10px;
+  font-size: 0.9rem;
+}
