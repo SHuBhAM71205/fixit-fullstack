@@ -138,7 +138,7 @@ router.post('/applytaskmaster', upload.single('document'), async (req, res) => {
         const file = req.file;
         const user = await User.findOne({ email: email });
         if (!user) {
-            res.status('400').json({ 'message': 'user dont exist create user' })
+            res.status(400).json({ 'message': 'user dont exist create user' })
         }
 
         if (!file || file.mimetype !== 'application/pdf') {

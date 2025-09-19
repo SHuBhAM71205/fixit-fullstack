@@ -14,7 +14,7 @@ const port = process.env.PORT;
 
 
 app.use(cors({
-  origin:process.env.FRONTEND, 
+  origin:[process.env.FRONTEND_USER,process.env.FRONTEND_ADMIN,process.env.FRONTEND_TM], 
   exposedHeaders: ['Auth-Token']   
 }));
 
